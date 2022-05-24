@@ -1,0 +1,61 @@
+.container3 {
+    width: 100%;
+    padding: 30px;
+    position: relative;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: -40px;
+    margin-left: 100px;
+}
+
+.container3 .card {
+    max-width: 350px;
+    position: relative;
+    width: 280px;
+    height: 280px;
+    margin: 30px 10px;
+    padding: 20px 10px;
+    flex-direction: column;
+    transition: 0.5s ease-in-out;
+    background-color: white;
+    border-radius: 11px;
+    border: 1px solid black;
+    box-shadow: 5px 5px rgb(3, 7, 77);
+}
+
+.container3 .card:hover {
+    height: 290px;
+}
+
+.container3 .card .imagem_info {
+    position: relative;
+    width: 250px;
+    height: 220px;
+    top: -10px;
+    left: 0%;
+    z-index: 1;
+}
+
+.container3 .card .imagem_info img {
+    max-width: 100%;
+    border: 11px;
+    visibility: visible;
+    transition: 0.3s ease-in-out;
+}
+
+.container3 .card:hover .imagem_info img {
+    visibility: hidden;
+    transition: 0.1s ease-in-out;
+    transition-delay: 0.1s;
+}
+
+#Etec {
+    background-color: hsl(205, 81%, 73%);
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    padding: 1px;
+    margin-left: 100px;
+    width: 1000px;
+}

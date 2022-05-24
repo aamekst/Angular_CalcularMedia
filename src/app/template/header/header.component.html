@@ -1,0 +1,30 @@
+<nav class=" navbar navbar-expand-lg navbar-light " style=" background-color: hsl(205, 76%, 81%); ">
+    <img id="imghas" src="assets/img/has1.png " />
+    <a class="navbar-brand " href="# "></a>
+    <button class=" navbar-toggler " type="button " data-toggle="collapse " data-target="#navbarSupportedContent " aria-controls="navbarSupportedContent " aria-expanded="false " aria-label="Toggle navigation ">
+    <span class="navbar-toggler-icon "></span>
+    </button>
+
+    <div class="collapse navbar-collapse " id="navbarSupportedContent ">
+        <ul class="navbar-nav mr-auto ">
+            <li class="nav-item active ">
+                <a class="nav-link " href="# ">Inicio</a>
+            </li>
+            <li class="nav-item ">
+                <a class="nav-link " href="# ">Aulas</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">
+                Boletim
+                </a>
+                <div class="dropdown-menu " aria-labelledby="navbarDropdown ">
+                    <a class="dropdown-item " routerLink="/Boletim">Calcular média</a>
+                    <a class="dropdown-item " routerLink="/Boletim/consultar">Consultar</a>
+                </div>
+            </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0 ">
+            <button class="dropdown-item " routerLink="/" class="btn btn-primary" type="submit">Sair</button>
+        </form>
+    </div>
+</nav>
