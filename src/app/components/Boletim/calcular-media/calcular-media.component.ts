@@ -6,15 +6,18 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./calcular-media.component.css']
 })
 export class CalcularMediaComponent implements OnInit {
-
+  nome2: string = "Calcular média"
   codigoRMA: number = 12345;
   nome: string = 'Josh';
-  nota1: number = 4;
-  nota2: number = 4;
-  nota3: number = 3;
-  nota4: number = 3;
-  media: number= 3;
-  image: string ='assets/img/pocoyo.jpg';
+  nota1: number = 10;
+  nota2: number = 10;
+  nota3: number = 5;
+  nota4: number = 0;
+  media: number= 0;
+  aprovado: boolean = true;
+  imagereprovado: string ='assets/img/pocoyo.jpg';
+  imageaprovado: string ='assets/img/pocoyo3.jpg';
+  img: string ='assets/img/pocoyo2.jpg';
   dataatual = '2022-05-24'
 
 
@@ -25,20 +28,19 @@ export class CalcularMediaComponent implements OnInit {
     console.log('Nome:', this.nome);
     console.log('Média:', this.media);
 
-    /*function media()
-    {
-      media = (nota1 + nota2 + nota3 + nota4)/4
-    
-      if (media >=6){
-        alert('aprovado')
+
+      this.media = (this.nota1 + this.nota2 + this.nota3 + this.nota4)/4
+
+      if (this.media >=6){
+        this.aprovado=true;
+        this.img = this.imageaprovado;
     } else {
-        if (media <=5)
-       alert('reprovado')   
-    }
+       this.aprovado=false;
+       this.img= this.imagereprovado;
 
     }
-    media();*/
-  
+
+
 
 
    }

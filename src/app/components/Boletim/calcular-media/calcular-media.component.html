@@ -1,2 +1,41 @@
 <br>
 <h1 id='media'>CALCULAR MÉDIA</h1><br><br>
+<div id="container">
+<div class="container">
+  <div class="row">
+    <div class="col-sm">
+      <div class="card" style="width: 18rem;" >
+        <img src={{img}} style="height: 300px;" alt="...">
+        <div class="card-body">
+
+          <h3 class="card-text2">{{nome}}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {{codigoRMA}}</h3>
+          <span *ngIf="aprovado; else elseBlock" class="badge badge-success">Aprovado</span><br>
+          <ng-template #elseBlock>
+            <span class="badge badge-danger">Reprovado</span>
+          </ng-template>
+
+          <br><h5 class="card-title">Sua média: {{ media}}</h5><br>
+          <p id="textdate">{{dataatual | date: 'longDate'}}</p>
+          <!--<a href="#" class="btn btn-info">Calcular</a>-->
+        </div>
+      </div>
+    </div>
+    <div class="col-sm">
+      <p class="card-text"><b>Nota 1:</b></p>
+      <p class="card-text">{{ nota1}}</p>
+    </div>
+    <div class="col-sm">
+      <p class="card-text"><b>Nota 2:</b></p>
+      <p class="card-text">{{ nota2}}</p>
+    </div>
+    <div class="col-sm">
+      <p class="card-text"><b>Nota 3:</b></p>
+      <p class="card-text">{{ nota3}}</p>
+    </div>
+    <div class="col-sm">
+      <p class="card-text"><b>Nota 4:</b></p>
+      <p class="card-text">{{ nota4}}</p>
+    </div>
+  </div>
+</div>
+

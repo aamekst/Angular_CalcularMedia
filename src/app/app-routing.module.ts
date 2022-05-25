@@ -1,3 +1,4 @@
+import { AulasComponent } from './components/aulas/aulas.component';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { CalcularMediaComponent } from './components/Boletim/calcular-media/calcular-media.component';
@@ -9,6 +10,7 @@ const routes: Routes = [
   {path:'Boletim', component:CalcularMediaComponent},
 
   {path:'Boletim/consultar', component:ConsultarComponent},
+  {path:'aulas', component:AulasComponent},
 ];
 
 @NgModule({

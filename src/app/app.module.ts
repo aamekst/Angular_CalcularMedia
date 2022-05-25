@@ -8,6 +8,7 @@ import { FooterComponent } from './template/footer/footer.component';
 import { HomeComponent } from './components/home/home.component';
 import { CalcularMediaComponent } from './components/Boletim/calcular-media/calcular-media.component';
 import { ConsultarComponent } from './components/Boletim/consultar/consultar.component';
+import { AulasComponent } from './components/aulas/aulas.component';
 
 @NgModule({
   declarations: [
@@ -17,6 +18,7 @@ import { ConsultarComponent } from './components/Boletim/consultar/consultar.com
     HomeComponent,
     CalcularMediaComponent,
     ConsultarComponent,
+    AulasComponent,
   ],
   imports: [
     BrowserModule,
